@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Row, Col, Button } from 'reactstrap';
 import { IPersonState } from './State';
+import FormValidation from './FormValidation';
 
 interface IProps {
     DefaultState: IPersonState
@@ -40,6 +41,10 @@ function PersonalDetails(props: IProps) { //遵守约定，属性由父组件传
                 break;
         }
     }
+    let canSave: boolean = false;
+    const userCanSave = (hasErrors: boolean) => {
+        canSave = hasErrors;
+    }
     return (
         <Row>
             <Col lg="8">
@@ -49,7 +54,7 @@ function PersonalDetails(props: IProps) { //遵守约定，属性由父组件传
                 <Row>
                     <Col>
                         <Row>
-                            <Col><label htmlFor="firstName" placeholder="First name" /></Col>
+                            <Col><label htmlFor="firstName" />First name</Col>
                             <Col><label htmlFor="lastName">Last name</label></Col>
                         </Row>
                     </Col>
@@ -118,7 +123,7 @@ function PersonalDetails(props: IProps) { //遵守约定，属性由父组件传
                         <Button size="lg" color="secondary" >Clear</Button>
                     </Col>
                 </Row>
-
+                <Row><FormValidation CurrentState={status} CanSave={userCanSave} /></Row>
             </Col>
             <Col>
                 <Col>

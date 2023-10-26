@@ -1,6 +1,6 @@
 import { IPersonState } from '@/State';
-import { MinLengthValidator } from '@/Validators/MinLengthValidator';
-import { RegularExpressionValidator } from '@/Validators/RegularExpressionValidator';
+import { MinLengthValidator } from '../Validators/MinLengthValidator';
+import { RegularExpressionValidator } from '../Validators/RegularExpressionValidator';
 import { IValidation } from './IValidation';
 
 export class AddressValidation implements IValidation {

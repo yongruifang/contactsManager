@@ -1,5 +1,5 @@
 import { IPersonState } from '@/State';
-import { MinLengthValidator } from '@/Validators/MinLengthValidator';
+import { MinLengthValidator } from '../Validators/MinLengthValidator';
 import { IValidation } from './IValidation';
 
 export class PersonValidation implements IValidation {
