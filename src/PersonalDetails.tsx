@@ -71,7 +71,7 @@ function PersonalDetails(props: IProps) { //遵守约定，属性由父组件传
         const foundPerson = people.find((element: IPersonState) => {
             return element.PersonId === person;
         })
-        if (foundPerson == undefined) {
+        if (foundPerson === undefined) {
             return;
         }
         const personState: IRecordState = new RecordState();
