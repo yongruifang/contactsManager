@@ -46,3 +46,7 @@ Web浏览器提供了对IndexedDB的支持，将IndexedDB作为数据存储，�
 我们使用一个交叉类型来处理这个需求。
 
 # 从PersonalDetails访问数据库
+
+
+# 部署在Netlify
+https://venerable-kulfi-3d1672.netlify.app/
