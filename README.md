@@ -49,4 +49,4 @@ Web浏览器提供了对IndexedDB的支持，将IndexedDB作为数据存储，�
 
 
 # 部署在Netlify
-https://venerable-kulfi-3d1672.netlify.app/
+[address-list.netlify.app](https://address-list.netlify.app)
